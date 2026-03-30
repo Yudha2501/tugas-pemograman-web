@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Teknologi Core - Smart Home</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #0a0e17; color: #e0e6ed; }
+        nav { background: rgba(20, 26, 38, 0.8); backdrop-filter: blur(10px); padding: 15px 0; text-align: center; border-bottom: 2px solid #00d2ff; box-shadow: 0 0 15px rgba(0, 210, 255, 0.5); }
+        nav a { color: #e0e6ed; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: #00d2ff; text-shadow: 0 0 10px #00d2ff; }
+        
+        .main-title { text-align: center; margin-top: 50px; font-size: 2.5em; color: #fff; text-shadow: 0 0 15px #9b51e0; text-transform: uppercase; }
+        
+        .tech-grid { max-width: 1100px; margin: 50px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding-bottom: 60px;}
+        
+        /* GLASSMORPHISM CARD */
+        figure { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 15px; text-align: center; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        figure:hover { transform: translateY(-10px); border: 1px solid #00d2ff; box-shadow: 0 0 25px rgba(0, 210, 255, 0.4); }
+        
+        img { width: 100%; height: 200px; object-fit: crop; border-radius: 10px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        
+        figcaption { font-weight: bold; font-size: 1.2em; color: #00d2ff; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="teknologi.html">Teknologi</a>
+        <a href="datasensor.html">Data Sensor</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    
+    <h1 class="main-title">Core Infrastructure</h1>
+    
+    <div class="tech-grid">
+        <figure>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400" alt="Microcontroller">
+            <figcaption>NodeMCU Mikrokontroler</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=400" alt="Sensors">
+            <figcaption>Jaringan Sensor DHT11</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=400" alt="Cloud Monitoring">
+            <figcaption>Monitoring Cloud v2.1</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
