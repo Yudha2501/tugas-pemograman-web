@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sensor Data Interface</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #0a0e17; color: #e0e6ed; }
+        nav { background: rgba(20, 26, 38, 0.8); backdrop-filter: blur(10px); padding: 15px 0; text-align: center; border-bottom: 2px solid #00d2ff; box-shadow: 0 0 15px rgba(0, 210, 255, 0.5); }
+        nav a { color: #e0e6ed; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: #00d2ff; text-shadow: 0 0 10px #00d2ff; }
+        
+        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; padding-bottom: 60px; }
+        h2 { text-align: center; font-size: 2.2em; color: #fff; text-shadow: 0 0 15px #00d2ff; margin-bottom: 30px; text-transform: uppercase; }
+        
+        .sensor-info { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .sensor-info ul { list-style: none; padding-left: 10px; color: #b0bec5; }
+        .sensor-info li::before { content: "► "; color: #9b51e0; font-size: 0.8em; }
+
+        /* FUTURISTIC TABLE */
+        table { width: 100%; border-collapse: collapse; background: rgba(20, 26, 38, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.4); }
+        th, td { padding: 15px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        th { background-color: rgba(155, 81, 224, 0.2); color: #fff; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+        tr:last-child td { border-bottom: none; }
+        tr:nth-child(even) { background-color: rgba(255, 255, 255, 0.02); }
+        tr:hover { background-color: rgba(0, 210, 255, 0.1); }
+        td { color: #cfd8dc; font-family: 'Courier New', monospace; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="teknologi.html">Teknologi</a>
+        <a href="datasensor.html">Data Sensor</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <h2>Live Sensor Feed</h2>
+        <div class="sensor-info">
+            <h3>Sistem Status: <span style="color:#27ae60;">ONLINE</span></h3>
+            <ul>
+                <li>Aktif: NodeMCU #1 (Living Room)</li>
+                <li>Aktif: Sensor DHT11 v2.0</li>
+                <li>Standby: Relay Control #3</li>
+            </ul>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Waktu Feed</th>
+                    <th>Suhu (°C)</th>
+                    <th>Kelembaban (%)</th>
+                    <th>Tegangan (V)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>08:00:15</td><td>25.2°C</td><td>61%</td><td>219.8V</td></tr>
+                <tr><td>09:00:02</td><td>26.1°C</td><td>58%</td><td>220.1V</td></tr>
+                <tr><td>10:00:22</td><td>27.0°C</td><td>55%</td><td>221.0V</td></tr>
+                <tr><td>11:00:10</td><td>26.8°C</td><td>56%</td><td>220.0V</td></tr>
+                <tr><td>12:00:55</td><td>28.5°C</td><td>50%</td><td>218.9V</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
