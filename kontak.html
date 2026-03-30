@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Interface - Smart Home</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #0a0e17; color: #e0e6ed; }
+        nav { background: rgba(20, 26, 38, 0.8); backdrop-filter: blur(10px); padding: 15px 0; text-align: center; border-bottom: 2px solid #00d2ff; box-shadow: 0 0 15px rgba(0, 210, 255, 0.5); }
+        nav a { color: #e0e6ed; margin: 0 20px; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: #00d2ff; text-shadow: 0 0 10px #00d2ff; }
+        
+        .container { max-width: 600px; margin: 60px auto; padding: 0 20px; padding-bottom: 60px; }
+        
+        /* MODERN FORM CARD */
+        .form-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .form-card h3 { text-align: center; font-size: 1.8em; color: #fff; text-shadow: 0 0 10px #9b51e0; margin-bottom: 10px; text-transform: uppercase; }
+        .contact-no { text-align: center; color: #00d2ff; font-weight: bold; font-size: 1.2em; margin-bottom: 30px; font-family: monospace; }
+        
+        label { display: block; margin-bottom: 5px; color: #b0bec5; font-weight: bold; font-size: 0.9em; text-transform: uppercase; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 20px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: #fff; font-size: 1em; transition: 0.3s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #00d2ff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.3); }
+        
+        textarea { height: 120px; resize: vertical; }
+        
+        /* NEON GREEN BUTTON */
+        button { width: 100%; padding: 15px; background: transparent; color: #2ecc71; border: 2px solid #2ecc71; border-radius: 5px; cursor: pointer; font-size: 1.1em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; box-shadow: 0 0 10px rgba(46, 204, 113, 0.3); }
+        button:hover { background: #2ecc71; color: #0a0e17; box-shadow: 0 0 20px #2ecc71; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="teknologi.html">Teknologi</a>
+        <a href="datasensor.html">Data Sensor</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="form-card">
+            <h3>Hubungi Admin Sistem</h3>
+            <p class="contact-no">► 085634786777</p>
+            
+            <form action="#" method="get">
+                <label>Nama Pengguna:</label>
+                <input type="text" placeholder="Masukkan Nama" required>
+                
+                <label>Email Korporat:</label>
+                <input type="email" placeholder="email@perusahaan.com" required>
+                
+                <label>Topik Modul:</label>
+                <select>
+                    <option>Smart Home (Default)</option>
+                    <option>Robotika v3.0</option>
+                    <option>AI Integrasi</option>
+                </select>
+                
+                <label>Laporan/Pesan:</label>
+                <textarea placeholder="Tulis pesan Anda di sini..."></textarea>
+                
+                <button type="submit">Kirim ke Protokol 085634786777</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
